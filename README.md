@@ -56,4 +56,4 @@ All styles are embedded in `index.html` — single file, no build tools, no exte
 
 ## Licence
 
-Content © 2026 Dr. Joseph (Jos) Binh Thanh Dang. Code structure freely reusable.
+Content © 2026 Dr. Joseph Binh Thanh Dang. Code structure freely reusable.
