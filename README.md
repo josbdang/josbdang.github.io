@@ -4,7 +4,7 @@ Personal website of **Dr. Joseph (Jos) Binh Thanh Dang** — Senior Lecturer and
 
 ## Live Site
 
-🔗 [https://YOUR_USERNAME.github.io](https://YOUR_USERNAME.github.io)
+🔗 [https://binhthanhdang.github.io](https://binhthanhdang.github.io)
 
 ## Technology
 
@@ -17,11 +17,11 @@ No build tools required. All dependencies are loaded via CDN.
 
 ## Setup
 
-1. Create a GitHub repository named `YOUR_USERNAME.github.io`
+1. Create a GitHub repository named `binhthanhdang.github.io`
 2. Clone it locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
-   cd YOUR_USERNAME.github.io
+   git clone https://github.com/binhthanhdang/binhthanhdang.github.io.git
+   cd binhthanhdang.github.io
    ```
 3. Copy `index.html`, `style.css`, and this `README.md` into the repository folder
 4. (Optional) Add a profile photo as `photo.jpg` and update the `<img>` tag in `index.html`
