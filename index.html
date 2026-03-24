@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Joseph Dang — Researcher &amp; Senior Lecturer</title>
-    <meta name="description" content="Personal academic website of Dr. Joseph Dang — Senior Lecturer at Whitecliffe College, Wellington, New Zealand.">
+    <title>Dr. Joseph (Jos) Binh Thanh Dang — Researcher &amp; Senior Lecturer</title>
+    <meta name="description" content="Personal academic website of Dr. Joseph (Jos) Binh Thanh Dang — Senior Lecturer and Research Coordinator at Whitecliffe College, Wellington, New Zealand.">
 
-    <!-- Bootstrap 5.3.8 CSS — VERIFIED integrity hash from getbootstrap.com -->
+    <!-- Bootstrap 5.3.8 CSS — verified hash from getbootstrap.com -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-    /* ============================================================
-       EMBEDDED STYLES — zero external CSS dependencies
-       ============================================================ */
     :root {
         --color-primary:     #1b2a4a;
         --color-primary-rgb: 27,42,74;
@@ -38,165 +33,149 @@
         --font-body:         'Source Sans 3', 'Segoe UI', sans-serif;
         --nav-height:        70px;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
-        font-family: var(--font-body);
-        color: var(--color-text);
-        background: var(--color-bg);
-        line-height: 1.7;
-        padding-top: var(--nav-height);
-        margin: 0;
+        font-family: var(--font-body); color: var(--color-text); background: var(--color-bg);
+        line-height: 1.7; padding-top: var(--nav-height); margin: 0;
     }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-family: var(--font-display);
-        color: var(--color-primary);
-    }
-
-    a { color: var(--color-accent); text-decoration: none; transition: color 0.25s ease; }
+    h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); color: var(--color-primary); }
+    a { color: var(--color-accent); text-decoration: none; transition: color .25s; }
     a:hover { color: var(--color-accent-hover); }
-    ::selection { background: rgba(var(--color-primary-rgb), 0.15); }
+    ::selection { background: rgba(var(--color-primary-rgb),.15); }
 
-    /* ---- Navbar ---- */
+    /* Navbar */
     #mainNav {
-        background: var(--color-primary) !important;
-        min-height: var(--nav-height);
-        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
-        transition: box-shadow 0.3s ease;
+        background: var(--color-primary) !important; min-height: var(--nav-height);
+        box-shadow: 0 2px 20px rgba(0,0,0,.15); transition: box-shadow .3s;
     }
-    #mainNav.nav-scrolled { box-shadow: 0 2px 30px rgba(0,0,0,0.25); }
+    #mainNav.nav-scrolled { box-shadow: 0 2px 30px rgba(0,0,0,.25); }
     #mainNav .navbar-brand {
         font-family: var(--font-display); font-weight: 700; font-size: 1.4rem;
-        color: #fff !important; letter-spacing: 0.04em;
+        color: #fff !important; letter-spacing: .04em;
     }
     #mainNav .nav-link {
-        color: rgba(255,255,255,0.85) !important; font-weight: 600; font-size: 0.88rem;
-        text-transform: uppercase; letter-spacing: 0.08em; padding: 0.5rem 0.85rem !important;
-        transition: color 0.2s ease;
+        color: rgba(255,255,255,.85) !important; font-weight: 600; font-size: .88rem;
+        text-transform: uppercase; letter-spacing: .08em; padding: .5rem .85rem !important;
     }
     #mainNav .nav-link:hover, #mainNav .nav-link.active { color: var(--color-accent) !important; }
-    #mainNav .navbar-toggler { border-color: rgba(255,255,255,0.4); }
+    #mainNav .navbar-toggler { border-color: rgba(255,255,255,.4); }
     #mainNav .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    /* ---- Hero ---- */
+    /* Hero */
     .section-hero {
         background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
         color: #fff; padding: 5rem 0 4.5rem; position: relative; overflow: hidden;
     }
     .section-hero::before {
-        content: ''; position: absolute; inset: 0; pointer-events: none;
-        background: radial-gradient(ellipse at 20% 80%, rgba(199,146,62,0.10) 0%, transparent 60%),
-                    radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
+        content:''; position:absolute; inset:0; pointer-events:none;
+        background: radial-gradient(ellipse at 20% 80%, rgba(199,146,62,.1) 0%, transparent 60%),
+                    radial-gradient(ellipse at 80% 20%, rgba(255,255,255,.04) 0%, transparent 50%);
     }
     .photo-frame {
-        width: 200px; height: 200px; border-radius: 50%; overflow: hidden;
-        border: 4px solid rgba(255,255,255,0.25); box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-        margin: 0 auto;
+        width:200px; height:200px; border-radius:50%; overflow:hidden;
+        border:4px solid rgba(255,255,255,.25); box-shadow:0 8px 32px rgba(0,0,0,.25); margin:0 auto;
     }
-    .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photo-frame img { width:100%; height:100%; object-fit:cover; display:block; }
     .hero-greeting {
-        font-family: var(--font-body); font-size: 1rem; letter-spacing: 0.15em;
-        text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.3rem;
+        font-family:var(--font-body); font-size:1rem; letter-spacing:.15em;
+        text-transform:uppercase; color:var(--color-accent); margin-bottom:.3rem;
     }
     .hero-name {
-        font-family: var(--font-display); font-size: 2.5rem; font-weight: 700;
-        color: #fff !important; line-height: 1.2; margin-bottom: 0.6rem;
+        font-family:var(--font-display); font-size:2.5rem; font-weight:700;
+        color:#fff !important; line-height:1.2; margin-bottom:.6rem;
     }
-    .hero-title { font-size: 1.15rem; font-weight: 300; color: rgba(255,255,255,0.9); margin-bottom: 0.2rem; }
-    .hero-affiliation { font-size: 0.95rem; color: rgba(255,255,255,0.65); }
+    .hero-title { font-size:1.15rem; font-weight:300; color:rgba(255,255,255,.9); margin-bottom:.2rem; }
+    .hero-affiliation { font-size:.95rem; color:rgba(255,255,255,.65); }
     .btn-accent {
-        background: var(--color-accent); color: #fff; border: 2px solid var(--color-accent);
-        font-weight: 600; letter-spacing: 0.03em;
+        background:var(--color-accent); color:#fff; border:2px solid var(--color-accent); font-weight:600;
     }
-    .btn-accent:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); color: #fff; }
-    .btn-outline-light { border-width: 2px; font-weight: 600; letter-spacing: 0.03em; }
+    .btn-accent:hover { background:var(--color-accent-hover); border-color:var(--color-accent-hover); color:#fff; }
+    .btn-outline-light { border-width:2px; font-weight:600; }
 
-    /* ---- Sections ---- */
+    /* Sections */
     .section-alt { background: var(--color-bg-alt); }
-    .section-heading { text-align: center; font-size: 1.85rem; font-weight: 700; letter-spacing: 0.02em; margin-bottom: 0; }
-    .heading-rule { width: 60px; height: 3px; background: var(--color-accent); margin: 0.8rem auto 0; border-radius: 2px; }
+    .section-heading { text-align:center; font-size:1.85rem; font-weight:700; margin-bottom:0; }
+    .heading-rule { width:60px; height:3px; background:var(--color-accent); margin:.8rem auto 0; border-radius:2px; }
 
-    /* ---- Research Cards ---- */
+    /* Research Cards */
     .research-card {
-        border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-card-bg);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border:1px solid var(--color-border); border-radius:8px; background:var(--color-card-bg);
+        transition: transform .3s, box-shadow .3s;
     }
-    .research-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.08); }
-    .research-card .card-body { display: flex; flex-direction: column; padding: 1.5rem; }
-    .research-icon { font-size: 2rem; color: var(--color-accent); margin-bottom: 0.75rem; }
-    .research-card .card-title { font-size: 1.1rem; font-weight: 700; }
-    .research-card .card-text { font-size: 0.95rem; color: var(--color-text-muted); flex-grow: 1; }
+    .research-card:hover { transform:translateY(-4px); box-shadow:0 8px 28px rgba(0,0,0,.08); }
+    .research-card .card-body { display:flex; flex-direction:column; padding:1.5rem; }
+    .research-icon { font-size:2rem; color:var(--color-accent); margin-bottom:.75rem; }
+    .research-card .card-title { font-size:1.05rem; font-weight:700; }
+    .research-card .card-text { font-size:.92rem; color:var(--color-text-muted); flex-grow:1; }
     .badge.bg-tag {
-        background: rgba(var(--color-primary-rgb), 0.08) !important;
-        color: var(--color-primary); font-weight: 600; font-size: 0.75rem;
-        letter-spacing: 0.04em; margin-right: 0.3rem; margin-bottom: 0.3rem;
+        background:rgba(var(--color-primary-rgb),.08) !important; color:var(--color-primary);
+        font-weight:600; font-size:.73rem; letter-spacing:.04em; margin-right:.3rem; margin-bottom:.3rem;
     }
 
-    /* ---- Publications ---- */
-    .pub-entry { display: flex; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--color-border); }
+    /* Publications */
+    .pub-entry { display:flex; gap:1.5rem; padding:1.1rem 0; border-bottom:1px solid var(--color-border); }
     .pub-year {
-        font-family: var(--font-display); font-weight: 700; font-size: 1rem;
-        color: var(--color-accent); min-width: 55px; flex-shrink: 0; padding-top: 2px;
+        font-family:var(--font-display); font-weight:700; font-size:.95rem;
+        color:var(--color-accent); min-width:50px; flex-shrink:0; padding-top:2px;
     }
-    .pub-details { flex: 1; min-width: 0; }
-    .pub-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.25rem; }
-    .pub-authors, .pub-venue { font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--color-text-muted); }
+    .pub-details { flex:1; min-width:0; }
+    .pub-title { font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--color-primary); margin-bottom:.2rem; }
+    .pub-authors,.pub-venue { font-size:.88rem; margin-bottom:.2rem; color:var(--color-text-muted); }
     .badge.bg-tag-pub {
-        background: rgba(199,146,62,0.12) !important; color: var(--color-accent);
-        font-weight: 600; font-size: 0.72rem; letter-spacing: 0.04em; margin-right: 0.25rem;
+        background:rgba(199,146,62,.12) !important; color:var(--color-accent);
+        font-weight:600; font-size:.7rem; margin-right:.25rem;
+    }
+    .pub-section-label {
+        text-transform:uppercase; color:var(--color-text-muted); letter-spacing:.1em;
+        font-family:var(--font-body); font-size:.78rem; font-weight:600; margin-bottom:.6rem;
     }
 
-    /* ---- Teaching ---- */
-    .teaching-card { border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-card-bg); }
-    .teaching-card .card-title { font-size: 1.15rem; font-weight: 700; color: var(--color-primary); margin-bottom: 1rem; }
-    .teaching-list { list-style: none; padding: 0; margin: 0; }
-    .teaching-list li { padding: 0.45rem 0; border-bottom: 1px solid var(--color-border); font-size: 0.95rem; }
-    .teaching-list li:last-child { border-bottom: none; }
+    /* Teaching */
+    .teaching-card { border:1px solid var(--color-border); border-radius:8px; background:var(--color-card-bg); }
+    .teaching-card .card-title { font-size:1.1rem; font-weight:700; color:var(--color-primary); margin-bottom:.8rem; }
+    .teaching-list { list-style:none; padding:0; margin:0; }
+    .teaching-list li { padding:.4rem 0; border-bottom:1px solid var(--color-border); font-size:.93rem; }
+    .teaching-list li:last-child { border-bottom:none; }
 
-    /* ---- Service ---- */
-    .service-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--color-border); }
-    .service-item:last-child { border-bottom: none; }
-    .service-item > i { font-size: 1.3rem; color: var(--color-accent); margin-top: 2px; flex-shrink: 0; }
+    /* Service */
+    .service-item { display:flex; align-items:flex-start; gap:1rem; padding:.9rem 0; border-bottom:1px solid var(--color-border); }
+    .service-item:last-child { border-bottom:none; }
+    .service-item > i { font-size:1.3rem; color:var(--color-accent); margin-top:2px; flex-shrink:0; }
 
-    /* ---- Contact ---- */
-    .contact-links { display: flex; flex-direction: column; gap: 0.75rem; align-items: center; }
+    /* Contact */
+    .contact-links { display:flex; flex-direction:column; gap:.75rem; align-items:center; }
     .contact-link-item {
-        display: inline-flex; align-items: center; gap: 0.6rem; font-size: 1.05rem;
-        color: var(--color-primary); padding: 0.55rem 1.2rem; border-radius: 6px;
-        border: 1px solid var(--color-border); background: var(--color-card-bg);
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-        min-width: 280px; text-align: left;
+        display:inline-flex; align-items:center; gap:.6rem; font-size:1.02rem;
+        color:var(--color-primary); padding:.5rem 1.1rem; border-radius:6px;
+        border:1px solid var(--color-border); background:var(--color-card-bg);
+        transition: transform .2s, box-shadow .2s, border-color .2s; min-width:280px;
     }
     .contact-link-item:hover {
-        border-color: var(--color-accent); box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-        transform: translateY(-2px); color: var(--color-primary);
+        border-color:var(--color-accent); box-shadow:0 4px 16px rgba(0,0,0,.06);
+        transform:translateY(-2px); color:var(--color-primary);
     }
-    .contact-link-item i { font-size: 1.2rem; color: var(--color-accent); flex-shrink: 0; }
+    .contact-link-item i { font-size:1.2rem; color:var(--color-accent); flex-shrink:0; }
 
-    /* ---- Footer ---- */
-    footer { background: var(--color-primary); color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+    footer { background:var(--color-primary); color:rgba(255,255,255,.6); font-size:.85rem; }
 
-    /* ---- Responsive ---- */
-    @media (max-width: 991.98px) {
-        .section-hero { padding: 4rem 0 3rem; }
-        .photo-frame { width: 160px; height: 160px; }
-        .hero-name { font-size: 2rem; }
+    @media (max-width:991.98px) {
+        .section-hero { padding:4rem 0 3rem; }
+        .photo-frame { width:160px; height:160px; }
+        .hero-name { font-size:2rem; }
     }
-    @media (max-width: 767.98px) {
-        .pub-entry { flex-direction: column; gap: 0.3rem; }
-        .pub-year { min-width: auto; }
-        .contact-link-item { min-width: 100%; }
-        .hero-name { font-size: 1.7rem; }
+    @media (max-width:767.98px) {
+        .pub-entry { flex-direction:column; gap:.3rem; }
+        .pub-year { min-width:auto; }
+        .contact-link-item { min-width:100%; }
+        .hero-name { font-size:1.7rem; }
     }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
 
-    <!-- ========== NAVBAR ========== -->
+    <!-- NAVBAR -->
     <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#hero">JD</a>
@@ -217,20 +196,19 @@
         </div>
     </nav>
 
-    <!-- ========== HERO ========== -->
+    <!-- HERO -->
     <header id="hero" class="section-hero">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-3 col-md-4 text-center mb-4 mb-lg-0">
                     <div class="photo-frame">
-                        <!-- Replace src with your photo -->
                         <img src="img/logo.jpg" alt="Dr. Joseph Dang">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-8">
                     <p class="hero-greeting">Hello, I'm</p>
-                    <h1 class="hero-name">Dr. Joseph <br>Dang</h1>
-                    <p class="hero-title">Senior Lecturer &amp; Research Coordinator</p>
+                    <h1 class="hero-name">Dr. Joseph Binh Thanh Dang</h1>
+                    <p class="hero-title">Senior Lecturer</p>
                     <p class="hero-affiliation">School of Information Technology, Whitecliffe College — Wellington, New Zealand</p>
                     <div class="mt-3">
                         <a href="#contact" class="btn btn-outline-light me-2"><i class="bi bi-envelope me-1"></i> Contact</a>
@@ -241,7 +219,7 @@
         </div>
     </header>
 
-    <!-- ========== ABOUT ========== -->
+    <!-- ABOUT -->
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="section-heading">About Me</h2>
@@ -249,117 +227,329 @@
             <div class="row mt-4 justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <p>
-                        I am a Senior Lecturer in the School of Information Technology
-                        at Whitecliffe College, Wellington. I hold a PhD in Computer Science from
-                        Victoria University of Wellington, where my doctoral research focused on combinatorial
-                        optimisation and metaheuristic algorithms.
+                        I am a Senior Lecturer and Research Coordinator in the School of Information Technology
+                        at Whitecliffe College, Wellington. I hold a PhD in Computer Science from Victoria University
+                        of Wellington (thesis: <em>Error Space Search for Combinatorial Optimisation</em>),
+                        a Master of Engineering from Sejong University, Seoul, and a BSc from the University of
+                        Science — Ho Chi Minh City National University.
                     </p>
                     <p>
-                        My current research spans three interconnected areas: combinatorial optimisation
-                        , applied machine learning for social impact
-                        (Vietnamese educational content safety, banking peformance, business sentimental analysis), and an emerging programme
-                        in explainable AI for clinical cancer survivorship research in collaboration with
-                        networks across New Zealand and the University of Leeds.
+                        My research sits at the intersection of combinatorial optimisation, nature-inspired
+                        computation, and applied machine learning. On the theoretical side, I design and analyse
+                        metaheuristic algorithms — tabu search, evolutionary strategies, and swarm intelligence —
+                        for NP-hard problems in scheduling, logistics, portfolio selection, and software engineering.
+                        On the applied side, I develop machine learning models for real-world challenges: housing
+                        demand forecasting, toxicity detection for educational chatbots, healthcare survival
+                        prediction, and sentiment analysis for e-commerce. A unifying concern across both strands
+                        is rigorous experimental methodology: I evaluate algorithms using non-parametric
+                        statistical tests (Wilcoxon, Friedman, Nemenyi) and benchmark against established baselines
+                        to produce results that are reproducible and genuinely comparable.
                     </p>
                     <p>
-                        I also serve as a AI Consultant with AIlogy Vietnam and Dude.AI, bridging academic research
-                        and industry applications of artificial intelligence.
+                        A growing focus of my work is the application of explainable AI (XAI) to long-term cancer
+                        survivorship prediction, developed in collaboration with clinical specialists in New Zealand
+                        (surgeons, oncologists) and international researchers at the University of Auckland and the
+                        University of Leeds. This programme is grounded in real patient data and aims at tools that
+                        clinicians can meaningfully interpret and act upon.
+                    </p>
+                    <p>
+                        Prior to Whitecliffe, I served as Deputy Head of the Department of Information Technology
+                        at the Industrial University of Ho Chi Minh City (IUH), where I led curriculum development
+                        towards ABET accreditation (achieved 2020). I also serve as AI Advisor for AIlogy Vietnam
+                        and Academic Advisor for DataDude Vietnam, bridging academic research and industry.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== RESEARCH ========== -->
+    <!-- RESEARCH INTERESTS -->
     <section id="research" class="py-5 section-alt">
         <div class="container">
             <h2 class="section-heading">Research Interests</h2>
             <div class="heading-rule"></div>
             <div class="row mt-4 g-4 justify-content-center">
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card research-card h-100">
                         <div class="card-body">
                             <div class="research-icon"><i class="bi bi-diagram-3"></i></div>
-                            <h5 class="card-title">Combinatorial Optimisation</h5>
+                            <h5 class="card-title">Combinatorial Optimisation &amp; Metaheuristics</h5>
                             <p class="card-text">
-                                Adaptive metaheuristics including Tabu Search, Iterated Local Search,
-                                and evolutionary computation applied to the Quadratic Assignment Problem
-                                and portfolio selection.
+                                Designing adaptive metaheuristic algorithms — Tabu Search, Iterated Local Search,
+                                evolutionary strategies, swarm intelligence — for NP-hard problems including the
+                                Quadratic Assignment Problem, Discounted Knapsack Problem, Set Covering Problem,
+                                and cardinality-constrained portfolio selection. Current work includes Adaptive
+                                Failsafe Tabu Search (AFTS) with a novel diversification mechanism and
+                                correlation-driven local search for portfolio optimisation.
                             </p>
                             <div class="mt-auto">
                                 <span class="badge bg-tag">Tabu Search</span>
                                 <span class="badge bg-tag">QAP</span>
                                 <span class="badge bg-tag">ILS</span>
+                                <span class="badge bg-tag">Knapsack</span>
+                                <span class="badge bg-tag">Portfolio Selection</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-heart-pulse"></i></div>
+                            <h5 class="card-title">Explainable AI in Healthcare</h5>
+                            <p class="card-text">
+                                Applying explainable AI to long-term breast cancer survivorship prediction using
+                                real New Zealand patient data, in collaboration with clinical specialists and
+                                researchers at the University of Auckland and the University of Leeds (NIHR Centre
+                                for Doctoral Training in Medical AI). Aimed at producing interpretable,
+                                clinician-actionable decision support tools — not black-box predictions.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">XAI</span>
+                                <span class="badge bg-tag">Cancer Survivorship</span>
+                                <span class="badge bg-tag">Clinical Decision Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card research-card h-100">
                         <div class="card-body">
                             <div class="research-icon"><i class="bi bi-translate"></i></div>
-                            <h5 class="card-title">Applied Machine Learning</h5>
+                            <h5 class="card-title">Applied ML &amp; NLP</h5>
                             <p class="card-text">
                                 Data-centric NLP for Vietnamese educational toxicity detection (ViMSTox),
-                                fake news detection, and sentiment analysis for social impact domains.
+                                fine-tuning LLMs for e-commerce sentiment analysis (IEEE Access), and
+                                housing demand forecasting with ensemble methods (Elastic Net, XGBoost, RNN).
+                                Research focused on social-impact domains where data quality and domain
+                                adaptation are critical challenges.
                             </p>
                             <div class="mt-auto">
                                 <span class="badge bg-tag">NLP</span>
-                                <span class="badge bg-tag">Vietnamese</span>
+                                <span class="badge bg-tag">LLM Fine-Tuning</span>
+                                <span class="badge bg-tag">Forecasting</span>
                                 <span class="badge bg-tag">Data-Centric AI</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card research-card h-100">
                         <div class="card-body">
-                            <div class="research-icon"><i class="bi bi-heart-pulse"></i></div>
-                            <h5 class="card-title">Explainable AI in Health</h5>
+                            <div class="research-icon"><i class="bi bi-code-slash"></i></div>
+                            <h5 class="card-title">Software Engineering Analytics</h5>
                             <p class="card-text">
-                                Emerging research in explainable AI for clinical cancer survivorship,
-                                collaborating with networks across New Zealand and the University of Leeds.
+                                Novel metrics and hybrid loss functions for software effort estimation, including
+                                the SIG metric for evaluating estimation bias and SIG-integrated loss functions
+                                for multi-layer perceptron models. International collaboration with researchers
+                                in Vietnam and the Czech Republic, targeting IEEE Transactions on Software
+                                Engineering.
                             </p>
                             <div class="mt-auto">
-                                <span class="badge bg-tag">XAI</span>
-                                <span class="badge bg-tag">Cancer Survivorship</span>
-                                <span class="badge bg-tag">Clinical AI</span>
+                                <span class="badge bg-tag">Effort Estimation</span>
+                                <span class="badge bg-tag">Hybrid Loss</span>
+                                <span class="badge bg-tag">MLP</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-bug"></i></div>
+                            <h5 class="card-title">Nature-Inspired Computation</h5>
+                            <p class="card-text">
+                                Bio-inspired algorithms — Binary Salp Swarm, Social Spider Algorithm, Genetic
+                                Algorithms — for combinatorial and continuous optimisation, published in PLOS ONE
+                                and Scopus-indexed venues. Current exploration of GAN-based solvers for NP-hard
+                                problems, investigating deep generative models as alternatives to classical
+                                heuristics.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">Swarm Intelligence</span>
+                                <span class="badge bg-tag">Evolutionary Computation</span>
+                                <span class="badge bg-tag">GAN Solvers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-wifi"></i></div>
+                            <h5 class="card-title">IoT &amp; Network Optimisation</h5>
+                            <p class="card-text">
+                                Spectrum allocation in cognitive radio networks, adaptive handover for mobile
+                                sensor networks, IoT integration standards (MATTER, IEEE ICETAS 2024), and
+                                earlier work on security protocols for wireless sensor networks and the
+                                IEEE 802.16j relay standard (Sejong University).
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">IoT</span>
+                                <span class="badge bg-tag">Cognitive Radio</span>
+                                <span class="badge bg-tag">Wireless Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ========== PUBLICATIONS ========== -->
+    <!-- PUBLICATIONS — published/accepted only -->
     <section id="publications" class="py-5">
         <div class="container">
-            <h2 class="section-heading">Selected Publications</h2>
+            <h2 class="section-heading">Publications</h2>
             <div class="heading-rule"></div>
-            <p class="text-muted mt-3 mb-4 text-center"><em>Representative works — see Google Scholar for a full list.</em></p>
+            <p class="text-muted mt-3 mb-4 text-center"><em>Published and accepted works. See Google Scholar for a complete list.</em></p>
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10">
+                <div class="col-lg-9 col-md-11">
+
+                    <h6 class="pub-section-label mt-2">Refereed Journal Articles</h6>
+
                     <div class="pub-entry">
                         <div class="pub-year">2025</div>
                         <div class="pub-details">
                             <h6 class="pub-title">Fine-Tuning LLMs for E-Commerce Sentiment Analysis: Proprietary Versus Open-Source Approaches</h6>
-                            <p class="pub-authors">Pawanjit Singh Ghatora, <strong>Binh Thanh Dang</strong>strong>, Huynh Thai Hoc, Shahbaz Pervez</p>
-                            <p class="pub-venue"><em>IEEE Access</em></p>
-                            <span class="badge bg-tag-pub">NLP</span>
+                            <p class="pub-authors">P. S. Ghatora, <strong>B. T. Dang</strong>, H. T. Hoc, S. Pervez</p>
+                            <p class="pub-venue"><em>IEEE Access</em>, vol. 13, pp. 199024–199035, 2025</p>
+                            <span class="badge bg-tag-pub">LLM</span>
+                            <span class="badge bg-tag-pub">Sentiment Analysis</span>
+                            <span class="badge bg-tag-pub">IEEE</span>
                         </div>
                     </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Forecasting New Zealand Housing Demand: Comparing Elastic Net, XGBoost and RNN Models</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, V. C. Bui</p>
+                            <p class="pub-venue"><em>Journal of Science and Technology — IUH</em>, 77(5), pp. 85–102, Nov. 2025</p>
+                            <span class="badge bg-tag-pub">Forecasting</span>
+                            <span class="badge bg-tag-pub">Ensemble Methods</span>
+                        </div>
+                    </div>
+
                     <div class="pub-entry">
                         <div class="pub-year">2022</div>
                         <div class="pub-details">
-                            <h6 class="pub-title">Binary salp swarm algorithm for discounted 0-1 knapsack problem</h6>
-                            <p class="pub-authors"><strong>B. T. Dang</strong>, et al.</p>
-                            <p class="pub-venue"><em>PLOS One</em></p>
-                            <span class="badge bg-tag-pub">Metaheuristics</span>
-                            <span class="badge bg-tag-pub">DKP</span>
-                            <span class="badge bg-tag-pub">Greedy algorithms</span>
+                            <h6 class="pub-title">Binary Salp Swarm Algorithm for Discounted {0-1} Knapsack Problem</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, T. K. Truong</p>
+                            <p class="pub-venue"><em>PLOS ONE</em>, 17(4): e0266537, 2022</p>
+                            <span class="badge bg-tag-pub">Swarm Intelligence</span>
+                            <span class="badge bg-tag-pub">Knapsack</span>
                         </div>
                     </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2017</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Social Spider Algorithm-Based Spectrum Allocation Optimisation for Cognitive Radio Networks</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, M. C. Vo, T. K. Truong</p>
+                            <p class="pub-venue"><em>Int. Journal of Applied Engineering Research</em>, 12(13), pp. 3879–3887, 2017</p>
+                            <span class="badge bg-tag-pub">Cognitive Radio</span>
+                            <span class="badge bg-tag-pub">SSA</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2015</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">An Adaptive Handover Scheme for Mobile Sensor Networks</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, P. H. Nguyen, T. K. Truong</p>
+                            <p class="pub-venue"><em>Journal of Next Generation of Information Technology</em>, vol. 6, no. 4, 2015</p>
+                            <span class="badge bg-tag-pub">Mobile Networks</span>
+                            <span class="badge bg-tag-pub">Handover</span>
+                        </div>
+                    </div>
+
+                    <h6 class="pub-section-label mt-4">Book Chapters</h6>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2026</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Improved Greedy Algorithms for the Set Covering Problem</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong></p>
+                            <p class="pub-venue">In: <em>Computational Intelligence in Engineering Science (ICCIES 2025)</em>, CCIS vol. 2586, pp. 44–58. Springer</p>
+                            <span class="badge bg-tag-pub">Greedy Algorithms</span>
+                            <span class="badge bg-tag-pub">Set Cover</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2022</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Operation-Based Greedy Algorithm for Discounted Knapsack Problem</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, B. H. Nguyen, P. Andreae</p>
+                            <p class="pub-venue">In: <em>AI 2022: Advances in Artificial Intelligence</em>, LNCS vol. 13728. Springer</p>
+                            <span class="badge bg-tag-pub">Greedy Algorithms</span>
+                            <span class="badge bg-tag-pub">Knapsack</span>
+                        </div>
+                    </div>
+
+                    <h6 class="pub-section-label mt-4">Selected Conference Papers</h6>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Long-Term Survival Insights Using Explainable AI: Role of DCIS in Invasive Breast Cancer</h6>
+                            <p class="pub-authors">R. Ghous, R. Broom, V. Blair, <strong>B. T. Dang</strong></p>
+                            <p class="pub-venue"><em>PHONZ 2025</em>, Public Health Observatory of NZ Conference, July 2025</p>
+                            <span class="badge bg-tag-pub">XAI</span>
+                            <span class="badge bg-tag-pub">Breast Cancer</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Innovative IoT Solutions: A Comprehensive Study of the MATTER Standard in Smart Home Integration</h6>
+                            <p class="pub-authors">I. Alam, <strong>B. T. Dang</strong>, S. Pervez</p>
+                            <p class="pub-venue"><em>IEEE ICETAS 2024</em>, Manama, Bahrain, Nov. 2024</p>
+                            <span class="badge bg-tag-pub">IoT</span>
+                            <span class="badge bg-tag-pub">MATTER</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">A Robust Machine Learning Model for Long-Term Survival Prediction of Breast Cancer Patients in New Zealand</h6>
+                            <p class="pub-authors">R. Ghous, <strong>B. T. Dang</strong></p>
+                            <p class="pub-venue"><em>PHONZ 2024</em>, Public Health Observatory of NZ Conference, July 2024</p>
+                            <span class="badge bg-tag-pub">ML</span>
+                            <span class="badge bg-tag-pub">Cancer Survivorship</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2016</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">An Improved Parallel Genetic Algorithm for the Travelling Salesman Problem</h6>
+                            <p class="pub-authors">T. K. Truong, <strong>B. T. Dang</strong>, D. B. LyHuynh, K. Le</p>
+                            <p class="pub-venue"><em>Int. Conference on Advanced Technology and Sustainable Development</em>, HCMC, Vietnam, 2016</p>
+                            <span class="badge bg-tag-pub">GA</span>
+                            <span class="badge bg-tag-pub">TSP</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2008</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">An Enhanced Key Management Protocol for Wireless Sensor Networks</h6>
+                            <p class="pub-authors"><strong>B. T. Dang</strong>, S. Lee, H. S. Kim</p>
+                            <p class="pub-venue"><em>Conference of Intelligent Transportation System</em>, Republic of Korea, Nov. 2008</p>
+                            <span class="badge bg-tag-pub">WSN Security</span>
+                        </div>
+                    </div>
+
                     <p class="text-center mt-4">
                         <a href="#" class="btn btn-outline-dark"><i class="bi bi-mortarboard me-1"></i> View Full List on Google Scholar</a>
                     </p>
@@ -368,39 +558,59 @@
         </div>
     </section>
 
-    <!-- ========== TEACHING ========== -->
+    <!-- TEACHING -->
     <section id="teaching" class="py-5 section-alt">
         <div class="container">
             <h2 class="section-heading">Teaching &amp; Supervision</h2>
             <div class="heading-rule"></div>
-            <div class="row mt-4 g-4 justify-content-center">
-                <div class="col-lg-5 col-md-6">
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-8 col-md-10 mb-4">
+                    <p class="text-center text-muted">
+                        Student evaluations consistently return scores of <strong>4.2–4.8 out of 5.0</strong>
+                        across postgraduate and undergraduate courses. Students frequently cite clarity
+                        of explanation, availability for support, and practical grounding of content as
+                        particular strengths.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
                     <div class="card h-100 teaching-card">
                         <div class="card-body p-4">
-                            <h5 class="card-title"><i class="bi bi-book me-2"></i>Courses</h5>
+                            <h5 class="card-title"><i class="bi bi-mortarboard me-2"></i>Postgraduate</h5>
                             <ul class="teaching-list">
                                 <li>Machine Learning</li>
-                                <li>Data Structures and Algorithms</li>
-                                <li>Capstone Project</li>
-                                <li>Information Security</li>
+                                <li>Research Methodologies</li>
+                                <li>Data Analysis</li>
+                                <li>Information Security (IUH, Vietnam)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="card h-100 teaching-card">
                         <div class="card-body p-4">
-                            <h5 class="card-title"><i class="bi bi-people me-2"></i>Supervision Areas</h5>
+                            <h5 class="card-title"><i class="bi bi-book me-2"></i>Undergraduate</h5>
                             <ul class="teaching-list">
-                                <li>Machine Learning &amp; Deep Learning</li>
-                                <li>Natural Language Processing</li>
-                                <li>Combinatorial Optimisation</li>
-                                <li>Data Science &amp; Applied Analytics</li>
-                                <li>Network Security &amp; Protocols</li>
+                                <li>Data Structures &amp; Algorithms</li>
+                                <li>Software Testing &amp; Maintenance</li>
+                                <li>IT Project (Capstone — all BIT students)</li>
+                                <li>Computer Networks (IUH)</li>
                             </ul>
-                            <p class="mt-3 text-muted small mb-0">
-                                I supervise Master's and Bachelor's research projects. If you're a prospective
-                                student interested in these areas, please get in touch.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 teaching-card">
+                        <div class="card-body p-4">
+                            <h5 class="card-title"><i class="bi bi-people me-2"></i>Supervision</h5>
+                            <ul class="teaching-list">
+                                <li><strong>14 Master's students</strong> successfully defended</li>
+                                <li>3 more completing early 2026</li>
+                                <li>Supervised students published in IEEE Access, PHONZ, IEEE ICETAS</li>
+                            </ul>
+                            <p class="mt-2 text-muted small mb-0">
+                                Supervision across ML, NLP, combinatorial optimisation, data science, and network security.
                             </p>
                         </div>
                     </div>
@@ -409,7 +619,7 @@
         </div>
     </section>
 
-    <!-- ========== SERVICE ========== -->
+    <!-- SERVICE -->
     <section id="service" class="py-5">
         <div class="container">
             <h2 class="section-heading">Professional Service</h2>
@@ -417,27 +627,31 @@
             <div class="row mt-4 justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <div class="service-item">
-                        <i class="bi bi-briefcase"></i>
-                        <div><strong> AI Consultant</strong> — AIlogy Vietnam and Dude.AI Vietnam</div>
+                        <i class="bi bi-clipboard-check"></i>
+                        <div><strong>Research &amp; Ethics Committee Member</strong> — Whitecliffe College (2023–present). Evaluate proposals, deliver college-wide research methodology seminars, contribute to Research Strategy 2026–2028.</div>
                     </div>
                     <div class="service-item">
-                        <i class="bi bi-clipboard-check"></i>
-                        <div><strong>Research &amp; Ethics Committee Member</strong> — Whitecliffe College</div>
+                        <i class="bi bi-briefcase"></i>
+                        <div><strong>AI Advisor</strong> — AIlogy Vietnam; <strong>Academic Advisor</strong> — DataDude Vietnam</div>
                     </div>
                     <div class="service-item">
                         <i class="bi bi-journal-check"></i>
-                        <div><strong>Peer Reviewer</strong> — Journal and conference manuscripts in ML, optimisation, and software engineering</div>
+                        <div><strong>Peer Reviewer</strong> — IEEE Access (2021–present); Journal of Science and Technology — IUH (2025–present)</div>
                     </div>
                     <div class="service-item">
-                        <i class="bi bi-award"></i>
-                        <div><strong>NZ Certificate in Adult &amp; Tertiary Teaching (Level 5)</strong> — Open Polytechnic (in progress)</div>
+                        <i class="bi bi-people"></i>
+                        <div><strong>IEEE Member</strong> — IEEE, IEEE Computational Intelligence Society, IEEE Young Professionals (2021–present); IT Professionals NZ (2023–present)</div>
+                    </div>
+                    <div class="service-item">
+                        <i class="bi bi-heart"></i>
+                        <div><strong>Community</strong> — Regular blood donor, NZ Blood Service; Technical team member, St. Mary of the Angels, Wellington</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
+    <!-- CONTACT -->
     <section id="contact" class="py-5 section-alt">
         <div class="container">
             <h2 class="section-heading">Contact</h2>
@@ -450,11 +664,17 @@
                             <i class="bi bi-envelope-fill"></i>
                             <span>josephd@whitecliffe.ac.nz</span>
                         </a>
-                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="contact-link-item">
+                        <a href="mailto:josbdang@gmail.com" class="contact-link-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>josbdang@gmail.com</span>
+                        </a>
+                        <!-- Replace # with your Google Scholar URL -->
+                        <a href="#" target="_blank" class="contact-link-item">
                             <i class="bi bi-mortarboard-fill"></i>
                             <span>Google Scholar</span>
                         </a>
-                        <a href="https://orcid.org/YOUR-ORCID-ID" target="_blank" class="contact-link-item">
+                        <!-- Replace # with your ORCID URL -->
+                        <a href="#" target="_blank" class="contact-link-item">
                             <i class="bi bi-person-badge-fill"></i>
                             <span>ORCID</span>
                         </a>
@@ -462,47 +682,32 @@
                             <i class="bi bi-github"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" class="contact-link-item">
-                            <i class="bi bi-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- FOOTER -->
     <footer class="py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2026 Dr. Joseph Dang.</p>
+            <p class="mb-0">&copy; 2026 Joseph Dang.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5.3.8 JS Bundle — VERIFIED integrity hash from getbootstrap.com -->
+    <!-- Bootstrap 5.3.8 JS — verified hash -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
-
-    <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-
     <script>
-    $(document).ready(function () {
-        // Smooth scrolling
-        $('a[href^="#"]').on('click', function (e) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                e.preventDefault();
-                $('html, body').animate({ scrollTop: target.offset().top - 70 }, 500);
-                var navCollapse = $('#navContent');
-                if (navCollapse.hasClass('show')) { navCollapse.collapse('hide'); }
-            }
+    $(document).ready(function(){
+        $('a[href^="#"]').on('click',function(e){
+            var t=$(this.getAttribute('href'));
+            if(t.length){e.preventDefault();$('html,body').animate({scrollTop:t.offset().top-70},500);
+            var n=$('#navContent');if(n.hasClass('show'))n.collapse('hide');}
         });
-        // Navbar shadow on scroll
-        $(window).on('scroll', function () {
-            $('#mainNav').toggleClass('nav-scrolled', $(this).scrollTop() > 60);
-        });
+        $(window).on('scroll',function(){$('#mainNav').toggleClass('nav-scrolled',$(this).scrollTop()>60);});
     });
     </script>
 </body>
