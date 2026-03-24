@@ -1,160 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon//apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon//favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon//favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Joseph Binh Thanh Dang — Researcher & Senior Lecturer</title>
+    <meta name="description" content="Personal academic website of Dr. Joseph Binh Thanh Dang — Senior Lecturer and Research Coordinator at Whitecliffe College, Wellington, New Zealand.">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Binh Thanh Dang's Personal Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
-    />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YcnS/1zKsG1Xt2ck2sIe4N6U6BSp0E8bPys" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
-    <style>
-      .logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      .header-text {
-        font-size: 2.2rem;
-        font-weight: 600;
-        margin-left: 1rem;
-        color: darkslateblue;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-      }
-      footer {
-        background-color: darkslategray;
-        color: white;
-        padding: 1rem 0;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="Logo" class="logo" />
-          </a>
-          <h1 class="navbar-brand header-text">Binh Thanh Dang's Page</h1>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publications">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#codes">Projects</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#hero">JD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                    aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header id="hero" class="section-hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="photo-frame mx-auto">
+                        <!-- Replace src with your photo: e.g. "photo.jpg" committed to the repo -->
+                        <img src="https://via.placeholder.com/280x280.png?text=Your+Photo" alt="Dr. Joseph Dang"
+                             class="img-fluid rounded-circle">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Dr. Joseph (Jos)<br>Binh Thanh Dang</h1>
+                    <p class="hero-title">Senior Lecturer &amp; Research Coordinator</p>
+                    <p class="hero-affiliation">School of Information Technology, Whitecliffe College — Wellington, New Zealand</p>
+                    <div class="hero-links mt-3">
+                        <a href="#contact" class="btn btn-outline-light me-2"><i class="bi bi-envelope me-1"></i> Contact</a>
+                        <!-- Update the href below to your actual CV file if you add one -->
+                        <a href="#publications" class="btn btn-accent"><i class="bi bi-file-earmark-text me-1"></i> Publications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Content Section -->
-    <section id="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h3>Overview</h3>
-            <p>
-              Hi everyone. People used to call me Joseph Dang, and you're free
-              to call me using the same name.
-            </p>
-            <p>
-              I have completed my doctoral studies in Computer Science at
-              Victoria University of Wellington, New Zealand, where I
-              successfully defended my thesis in 2023. My research interests
-              primarily lie in the field of intelligent algorithms, with a
-              specific focus on greedy algorithms and metaheuristics. These
-              algorithms will be used to solve optimization problems,
-              particularly in the domain of combinatorial optimization.
-              Additionally, I am actively involved in integrating optimization
-              algorithms with machine learning and artificial intelligence
-              techniques to address challenges in forecasting, classification,
-              and recommendation systems.
-            </p>
-            <p>
-              I am currently an IEEE, IEEE Computational Intelligence Society,
-              IEEE Young Professionals, and IT Professionals New Zealand (ITP)
-              Member.
-            </p>
-            <h3>Contact Information</h3>
-            <p><strong>Email: </strong>josbdang@gmail.com</p>
-            <p>
-              <strong>Address: </strong>Level 3, 110 Lambton Quay, Wellington
-              Central, Wellington 6011, New Zealand
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h3>Links</h3>
-            <ul>
-              <li>
-                <a class="nav-link" href="https://www.ieee.org/">IEEE </a>
-              </li>
-              <li><a class="nav-link" href="https://itp.nz/">ITP</a></li>
-              <li>
-                <a class="nav-link" href="https://www.wgtn.ac.nz/"
-                  >Victoria University of Wellington</a
-                >
-              </li>
-            </ul>
-          </div>
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-heading">About Me</h2>
+            <div class="heading-rule"></div>
+            <div class="row mt-4">
+                <div class="col-lg-8 mx-auto">
+                    <p>
+                        I am a Senior Lecturer and Research Coordinator in the School of Information Technology
+                        at Whitecliffe College, Wellington. I hold a PhD in Computer Science from
+                        Victoria University of Wellington, where my doctoral research focused on combinatorial
+                        optimisation and metaheuristic algorithms.
+                    </p>
+                    <p>
+                        My current research spans three interconnected areas: combinatorial optimisation
+                        (particularly Tabu Search and Iterated Local Search for problems such as the Quadratic
+                        Assignment Problem and portfolio selection), applied machine learning for social impact,
+                         and an emerging programme
+                        in explainable AI for clinical cancer survivorship research in collaboration with
+                        networks across New Zealand and the University of Leeds.
+                    </p>
+                    <p>
+                        I also serve as a Senior AI Consultant with AIlogy Vietnam and Dude.ai Vietnam, bridging academic research
+                        and industry applications of artificial intelligence.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Add some space before the footer-->
-      <div style="height: 300px"></div>
+    <!-- ========== RESEARCH ========== -->
+    <section id="research" class="py-5 section-alt">
+        <div class="container">
+            <h2 class="section-heading">Research Interests</h2>
+            <div class="heading-rule"></div>
+            <div class="row mt-4 g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-diagram-3"></i></div>
+                            <h5 class="card-title">Combinatorial Optimisation</h5>
+                            <p class="card-text">
+                                Adaptive metaheuristics including Tabu Search, Iterated Local Search,
+                                and evolutionary computation applied to the Quadratic Assignment Problem
+                                and portfolio selection.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">Tabu Search</span>
+                                <span class="badge bg-tag">QAP</span>
+                                <span class="badge bg-tag">ILS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-translate"></i></div>
+                            <h5 class="card-title">Applied Machine Learning</h5>
+                            <p class="card-text">
+                                Data-centric NLP for Vietnamese educational toxicity detection (ViMSTox),
+                                fake news detection, and sentiment analysis for social impact domains.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">NLP</span>
+                                <span class="badge bg-tag">Vietnamese</span>
+                                <span class="badge bg-tag">Data-Centric AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card research-card h-100">
+                        <div class="card-body">
+                            <div class="research-icon"><i class="bi bi-heart-pulse"></i></div>
+                            <h5 class="card-title">Explainable AI in Health</h5>
+                            <p class="card-text">
+                                Emerging research in explainable AI for clinical cancer survivorship,
+                                collaborating with networks across New Zealand and the University of Leeds.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge bg-tag">XAI</span>
+                                <span class="badge bg-tag">Cancer Survivorship</span>
+                                <span class="badge bg-tag">Clinical AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="container text-center">
-        <p>&copy; 2023 Binh Thanh Dang. All rights reserved.</p>
-      </div>
+    <!-- ========== PUBLICATIONS ========== -->
+    <section id="publications" class="py-5">
+        <div class="container">
+            <h2 class="section-heading">Selected Publications</h2>
+            <div class="heading-rule"></div>
+            <p class="text-muted mt-3 mb-4 text-center"><em>Representative works — see Google Scholar for a full list.</em></p>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+
+                    <!-- Publication Entry — repeat this block for each paper -->
+                    <div class="pub-entry">
+                        <div class="pub-year">2025</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">ViMSTox: Vietnamese Multilabel Severity Toxicity Detection in Educational Contexts</h6>
+                            <p class="pub-authors"><strong>J. B. T. Dang</strong>, et al.</p>
+                            <p class="pub-venue"><em>Education and Information Technologies</em> (Springer) — Under Review</p>
+                            <span class="badge bg-tag-pub">NLP</span>
+                            <span class="badge bg-tag-pub">Vietnamese</span>
+                            <span class="badge bg-tag-pub">Toxicity Detection</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">2024</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Adaptive Failsafe Tabu Search for the Quadratic Assignment Problem</h6>
+                            <p class="pub-authors"><strong>J. B. T. Dang</strong>, et al.</p>
+                            <p class="pub-venue"><em>Venue — update when published</em></p>
+                            <span class="badge bg-tag-pub">Tabu Search</span>
+                            <span class="badge bg-tag-pub">QAP</span>
+                            <span class="badge bg-tag-pub">Metaheuristics</span>
+                        </div>
+                    </div>
+
+                    <div class="pub-entry">
+                        <div class="pub-year">—</div>
+                        <div class="pub-details">
+                            <h6 class="pub-title">Portfolio Selection via Iterated Local Search</h6>
+                            <p class="pub-authors"><strong>J. B. T. Dang</strong>, et al.</p>
+                            <p class="pub-venue"><em>Venue — update as needed</em></p>
+                            <span class="badge bg-tag-pub">ILS</span>
+                            <span class="badge bg-tag-pub">Portfolio Optimisation</span>
+                        </div>
+                    </div>
+
+                    <!-- Add more publications here following the same pattern -->
+
+                    <p class="text-center mt-4">
+                        <!-- Replace # with your Google Scholar URL -->
+                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-mortarboard me-1"></i> View Full List on Google Scholar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEACHING ========== -->
+    <section id="teaching" class="py-5 section-alt">
+        <div class="container">
+            <h2 class="section-heading">Teaching &amp; Supervision</h2>
+            <div class="heading-rule"></div>
+            <div class="row mt-4 g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 teaching-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-book me-2"></i>Courses</h5>
+                            <ul class="teaching-list">
+                                <li>IT8105 — Machine Learning</li>
+                                <li>IT7745 — IT Project</li>
+                                <li>Symmetric &amp; Asymmetric Encryption</li>
+                                <li>Information Security</li>
+                                <!-- Add or update courses as needed -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 teaching-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-people me-2"></i>Supervision Areas</h5>
+                            <ul class="teaching-list">
+                                <li>Machine Learning &amp; Deep Learning applications</li>
+                                <li>Natural Language Processing</li>
+                                <li>Combinatorial Optimisation</li>
+                                <li>Data Science &amp; Applied Analytics</li>
+                                <li>Network Security &amp; Protocols</li>
+                                <!-- Update as needed -->
+                            </ul>
+                            <p class="mt-3 text-muted small">
+                                I supervise Master's and Bachelor's research projects. If you're a prospective
+                                student interested in these areas, please get in touch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICE ========== -->
+    <section id="service" class="py-5">
+        <div class="container">
+            <h2 class="section-heading">Professional Service</h2>
+            <div class="heading-rule"></div>
+            <div class="row mt-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="service-item">
+                        <i class="bi bi-briefcase"></i>
+                        <div>
+                            <strong>Senior AI Consultant</strong> — AIlogy Vietnam
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <i class="bi bi-clipboard-check"></i>
+                        <div>
+                            <strong>Research &amp; Ethics Committee Member</strong> — Whitecliffe College
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <i class="bi bi-journal-check"></i>
+                        <div>
+                            <strong>Peer Reviewer</strong> — Journal and conference manuscripts in ML, optimisation, and software engineering
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <i class="bi bi-award"></i>
+                        <div>
+                            <strong>NZ Certificate in Adult &amp; Tertiary Teaching (Level 5)</strong> — Open Polytechnic (in progress)
+                        </div>
+                    </div>
+                    <!-- Add more service items as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="py-5 section-alt">
+        <div class="container">
+            <h2 class="section-heading">Contact</h2>
+            <div class="heading-rule"></div>
+            <div class="row mt-4">
+                <div class="col-lg-6 mx-auto text-center">
+                    <p class="mb-4">I welcome enquiries about research collaboration, student supervision, and consulting.</p>
+                    <div class="contact-links">
+                        <!-- UPDATE these links with your actual details -->
+                        <a href="mailto:your.email@whitecliffe.ac.nz" class="contact-link-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>your.email@whitecliffe.ac.nz</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="contact-link-item">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                        <a href="https://orcid.org/YOUR-ORCID-ID" target="_blank" class="contact-link-item">
+                            <i class="bi bi-person-badge-fill"></i>
+                            <span>ORCID</span>
+                        </a>
+                        <a href="https://github.com/YOUR_USERNAME" target="_blank" class="contact-link-item">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" class="contact-link-item">
+                            <i class="bi bi-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Dr. Joseph (Jos) Binh Thanh Dang. Built with Bootstrap 5.</p>
+        </div>
     </footer>
 
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+    $(document).ready(function () {
+
+        // --- Smooth scrolling for nav links ---
+        $('a.nav-link, a[href^="#"]').on('click', function (e) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 70
+                }, 600);
+                // Collapse mobile nav after click
+                var navCollapse = $('#navContent');
+                if (navCollapse.hasClass('show')) {
+                    navCollapse.collapse('hide');
+                }
+            }
+        });
+
+        // --- Navbar background on scroll ---
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 60) {
+                $('#mainNav').addClass('nav-scrolled');
+            } else {
+                $('#mainNav').removeClass('nav-scrolled');
+            }
+        });
+
+        // --- Animate elements on scroll ---
+        function revealOnScroll() {
+            $('.research-card, .pub-entry, .teaching-card, .service-item, .contact-link-item').each(function () {
+                var elementTop = $(this).offset().top;
+                var viewportBottom = $(window).scrollTop() + $(window).height() - 60;
+                if (elementTop < viewportBottom) {
+                    $(this).addClass('revealed');
+                }
+            });
+        }
+        $(window).on('scroll', revealOnScroll);
+        revealOnScroll(); // run on load
+    });
+    </script>
+</body>
 </html>

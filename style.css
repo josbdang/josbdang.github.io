@@ -1,0 +1,435 @@
+/* ============================================================
+   Dr. Joseph (Jos) Binh Thanh Dang — Personal Academic Website
+   Custom stylesheet — overrides & extensions for Bootstrap 5
+   ============================================================ */
+
+/* ---------- CSS Variables ---------- */
+:root {
+    --color-primary:     #1b2a4a;   /* deep navy          */
+    --color-primary-rgb: 27,42,74;
+    --color-secondary:   #2c4066;   /* mid-navy           */
+    --color-accent:      #c7923e;   /* warm gold          */
+    --color-accent-hover:#d9a552;
+    --color-text:        #2d2d2d;
+    --color-text-muted:  #6b7280;
+    --color-bg:          #ffffff;
+    --color-bg-alt:      #f4f5f7;
+    --color-card-bg:     #ffffff;
+    --color-border:      #e2e5ea;
+    --font-display:      'Libre Baskerville', 'Georgia', serif;
+    --font-body:         'Source Sans 3', 'Segoe UI', sans-serif;
+    --nav-height:        70px;
+}
+
+/* ---------- Base ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.7;
+    padding-top: var(--nav-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+::selection {
+    background: rgba(var(--color-primary-rgb), 0.15);
+}
+
+/* ---------- Navbar ---------- */
+#mainNav {
+    background: transparent;
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+    height: var(--nav-height);
+}
+#mainNav.nav-scrolled {
+    background: var(--color-primary);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+#mainNav .navbar-brand {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 0.04em;
+}
+
+#mainNav .nav-link {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 0.9rem;
+    transition: color 0.2s ease;
+}
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+    color: var(--color-accent);
+}
+
+#mainNav .navbar-toggler {
+    border-color: rgba(255,255,255,0.4);
+}
+#mainNav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------- Hero ---------- */
+.section-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: #ffffff;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+.section-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 80%, rgba(199,146,62,0.10) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.photo-frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-greeting {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.3rem;
+}
+
+.hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+}
+
+.hero-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 0.2rem;
+}
+
+.hero-affiliation {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: #fff;
+    border: 2px solid var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: background 0.25s, border-color 0.25s;
+}
+.btn-accent:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    color: #fff;
+}
+
+.btn-outline-light {
+    border-width: 2px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* ---------- Sections ---------- */
+.section-alt {
+    background: var(--color-bg-alt);
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 1.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+}
+
+.heading-rule {
+    width: 60px;
+    height: 3px;
+    background: var(--color-accent);
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+}
+
+/* ---------- Research Cards ---------- */
+.research-card {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--color-card-bg);
+    /* reveal animation */
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+.research-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.research-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+.research-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.research-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+}
+
+.research-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.research-card .card-text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    flex-grow: 1;
+}
+
+.badge.bg-tag {
+    background: rgba(var(--color-primary-rgb), 0.08) !important;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ---------- Publications ---------- */
+.pub-entry {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-border);
+    /* reveal animation */
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.pub-entry.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pub-year {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-accent);
+    min-width: 52px;
+    padding-top: 2px;
+}
+
+.pub-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.pub-authors, .pub-venue {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-text-muted);
+}
+
+.badge.bg-tag-pub {
+    background: rgba(199,146,62,0.12) !important;
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    margin-right: 0.25rem;
+}
+
+/* ---------- Teaching ---------- */
+.teaching-card {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-card-bg);
+    /* reveal animation */
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.teaching-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.teaching-card .card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.teaching-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.teaching-list li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.95rem;
+}
+.teaching-list li:last-child {
+    border-bottom: none;
+}
+
+/* ---------- Service ---------- */
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+    /* reveal animation */
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.service-item.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-item:last-child {
+    border-bottom: none;
+}
+.service-item i {
+    font-size: 1.3rem;
+    color: var(--color-accent);
+    margin-top: 2px;
+}
+
+/* ---------- Contact ---------- */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.contact-link-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    padding: 0.55rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card-bg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    min-width: 260px;
+    /* reveal animation */
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact-link-item.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact-link-item:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+    color: var(--color-primary);
+}
+.contact-link-item i {
+    font-size: 1.2rem;
+    color: var(--color-accent);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: var(--color-primary);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+    #mainNav {
+        background: var(--color-primary) !important;
+    }
+    .section-hero {
+        min-height: auto;
+        padding: 5rem 0 4rem;
+    }
+    .photo-frame {
+        width: 160px;
+        height: 160px;
+    }
+    .hero-name {
+        font-size: 2rem;
+    }
+    .pub-entry {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .pub-year {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-link-item {
+        min-width: 100%;
+    }
+}
