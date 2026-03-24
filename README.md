@@ -1,10 +1,10 @@
 # Personal Academic Website
 
-Personal website of **Dr. Joseph (Jos) Binh Thanh Dang** — Senior Lecturer and Research Coordinator, School of Information Technology, Whitecliffe College, Wellington, New Zealand.
+Personal website of **Dr. Joseph Binh Thanh Dang** — Senior Lecturer and Research Coordinator, School of Information Technology, Whitecliffe College, Wellington, New Zealand.
 
 ## Live Site
 
-🔗 [https://binhthanhdang.github.io](https://binhthanhdang.github.io)
+🔗 [https://josbdang.github.io](https://josbdang.github.io)
 
 ## Technology
 
@@ -20,8 +20,8 @@ No build tools required. All dependencies are loaded via CDN.
 1. Create a GitHub repository named `binhthanhdang.github.io`
 2. Clone it locally:
    ```bash
-   git clone https://github.com/binhthanhdang/binhthanhdang.github.io.git
-   cd binhthanhdang.github.io
+   git clone https://github.com/josbdang/josbdang.github.io.git
+   cd josbdang.github.io
    ```
 3. Copy `index.html`, `style.css`, and this `README.md` into the repository folder
 4. (Optional) Add a profile photo as `photo.jpg` and update the `<img>` tag in `index.html`
